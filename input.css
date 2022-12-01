@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    li {
+        @apply block py-2 pl-3 pr-4 text-slate-50 uppercase hover:text-orange-400 md:hover:bg-transparent md:border-0 md:p-0;
+    }
+}
+
+.siteLogo {
+    width: 75px;
+}
+
+.headerImage {
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('/img/header-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+}
+
+.about {
+    background-color: #000000;
+    background-image: url('/img/map-image.png');
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+}
+
+.image-compare {
+    /* width: 50%; */
+    height: 40vh;
+}
+
+.active {
+    color: #F87171;
+}
