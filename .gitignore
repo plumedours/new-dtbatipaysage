@@ -1,9 +1,11 @@
 /node_modules
 /.DS_Store
+.DS_Store
 /.idea
 /.config.php
 
 /public/img/gallery/*
 /public/img/portfolio/*
+/public/img/.DS_Store
 
 !/**/*/.gitignore

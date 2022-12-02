@@ -10,7 +10,7 @@ class UploadPhoto
     private $name = '';
     private $directory = 'img/gallery';
     private $max_size = '5';
-    private $ext_allowed = ['jpg', 'jpeg', 'png', 'gif'];
+    private $ext_allowed = ['jpg', 'jpeg', 'png', 'gif', 'JPG', 'JPEG', 'PNG', 'GIF'];
     private $error = '';
     public Photo $photo;
 
