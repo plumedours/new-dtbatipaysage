@@ -31,16 +31,16 @@ if ($getCategory) {
     <?php require_once './part/navbarMin.php' ?>
 
     <div class="flex justify-center">
-        <div class="flex flex-row flex-wrap w-auto rounded mt-1 justify-center bg-gray-800 p-5">
-            <li class="mx-2 underline font-semibold <?= $activeLink->isAll() ?>"><a href="/gallery.php">Toutes</a></li>
+        <div class="flex flex-row flex-wrap text-xs md:text-sm w-auto lg:text-base rounded mt-1 justify-center bg-gray-800">
+            <li class="md:mx-2 underline font-semibold <?= $activeLink->isAll() ?>"><a href="/gallery.php">Toutes</a></li>
             <?php foreach ($categoryClass->getAllCategories() as $category) : ?>
-                <li class=" mx-2 underline font-semibold <?= $activeLink->setActive($category['slug']) ?>"><a href="/gallery.php?cat=<?= $category['slug'] ?>"><?= $category['name'] ?></a></li>
+                <li class="md:mx-2 underline font-semibold <?= $activeLink->setActive($category['slug']) ?>"><a href="/gallery.php?cat=<?= $category['slug'] ?>"><?= $category['name'] ?></a></li>
             <?php endforeach; ?>
         </div>
     </div>
-    <div class="flex flex-row flex-wrap justify-around py-10">
+    <div class="flex flex-row flex-wrap justify-center py-10">
         <?php foreach ($gallery as $photo) : ?>
-            <div class="flex flex-col">
+            <div class="flex flex-col p-2">
                 <a class="spotlight" href="<?= './img/gallery/' . $photo['name'] ?>"><img class="w-80 cursor-pointer" src="<?= './img/gallery/' . $photo['name'] ?>"></a>
                 <?php if ($isAdmin === true) : ?>
                     <a class="flex self-center" href="/deletePhoto.php?del=<?= $photo['id'] ?>"><i class="fa-solid fa-xmark pt-2 font-bold text-red-600"></i></a>
