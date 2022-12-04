@@ -1379,6 +1379,16 @@ li:hover {
   resize: both;
 }
 
+.columns-1 {
+  -moz-columns: 1;
+       columns: 1;
+}
+
+.columns-2 {
+  -moz-columns: 2;
+       columns: 2;
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -1433,6 +1443,10 @@ li:hover {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1640,6 +1654,11 @@ li:hover {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pt-2 {
@@ -1934,6 +1953,12 @@ li:hover {
   color: #F87171;
 }
 
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -2150,6 +2175,11 @@ li:hover {
     display: flex;
   }
 
+  .sm\:columns-2 {
+    -moz-columns: 2;
+         columns: 2;
+  }
+
   .sm\:items-center {
     align-items: center;
   }
@@ -2200,6 +2230,11 @@ li:hover {
 
   .md\:w-48 {
     width: 12rem;
+  }
+
+  .md\:columns-3 {
+    -moz-columns: 3;
+         columns: 3;
   }
 
   .md\:flex-row {
@@ -2272,6 +2307,11 @@ li:hover {
 
   .lg\:w-56 {
     width: 14rem;
+  }
+
+  .lg\:columns-4 {
+    -moz-columns: 4;
+         columns: 4;
   }
 
   .lg\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
