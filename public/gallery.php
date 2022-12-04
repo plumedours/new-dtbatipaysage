@@ -38,10 +38,10 @@ if ($getCategory) {
             <?php endforeach; ?>
         </div>
     </div>
-    <div class="columns-2 gap-2 px-2 md:columns-3 lg:columns-4 max-w-5xl mx-auto py-5">
+    <div class="columns-2 gap-0.5 px-2 md:columns-3 lg:columns-4 max-w-5xl mx-auto py-5">
         <?php foreach ($gallery as $photo) : ?>
             <div class="flex flex-col p-2">
-                <a class="spotlight" href="<?= './img/gallery/' . $photo['name'] ?>"><img class="w-auto hover:scale-110 transition duration-300 ease-in-out cursor-pointer" src="<?= './img/gallery/' . $photo['name'] ?>"></a>
+                <a class="spotlight" href="<?= './img/gallery/' . $photo['name'] ?>"><img class="w-auto hover:scale-105 transition duration-300 ease-in-out cursor-pointer shadow-lg shadow-gray-800" src="<?= './img/gallery/' . $photo['name'] ?>"></a>
                 <?php if ($isAdmin === true) : ?>
                     <a class="flex self-center" href="/deletePhoto.php?del=<?= $photo['id'] ?>"><i class="fa-solid fa-xmark pt-2 font-bold text-red-600"></i></a>
                 <?php endif; ?>
