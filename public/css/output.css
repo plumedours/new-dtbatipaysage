@@ -1379,11 +1379,6 @@ li:hover {
   resize: both;
 }
 
-.columns-1 {
-  -moz-columns: 1;
-       columns: 1;
-}
-
 .columns-2 {
   -moz-columns: 2;
        columns: 2;
@@ -2173,11 +2168,6 @@ li:hover {
 @media (min-width: 640px) {
   .sm\:flex {
     display: flex;
-  }
-
-  .sm\:columns-2 {
-    -moz-columns: 2;
-         columns: 2;
   }
 
   .sm\:items-center {
